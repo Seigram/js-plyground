@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var numbers = {};
+            numbers.all = [];
+            numbers.prime = [];
+            numbers.isPrime = function(number){
+
+            }
+
+            var foo = function(x){
+                var y = 2*x+3;
+                return y;
+            }
+
+            var r = foo(2);
+            console.log(foo(3));
+            console.log(r);
+
+
+            var x = {"range": [1,10000], "checkPrime":
+            function(x){
+                var isPrime = true;
+                for(i=x.range[0];i<=x.range[1];i++){
+                    for(j=2;j<i;j++){
+                        if(i%j === 0)
+                        {
+                            isPrime = false;
+                        }
+                    }
+                    if(isPrime)
+                    {
+                        x.prime.push(i);
+                    }
+                    isPrime=true;
+                }
+ 
+            },
+            "prime" : []           
+            };
+
+            x.checkPrime(x);
+
+        
+
+
+            
+
+            
+        </script>
+    </body>
+</html>
